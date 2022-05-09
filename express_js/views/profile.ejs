@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>profile page</title>
+    </head>
+    <body>
+        <%-include('common/nav');-%>
+        <h1>Welcome! Mrs <%=name%></h1>
+        <h3>Email:<%=data.email%></h3>
+        <h3>Adress:<%=data.adress%></h3>
+        <ul>
+            <%data.skills.forEach(function(item){%>
+                <li><%=item%></li>
+          <%})%>
+        </ul>
+    </body>
+</html>
+
